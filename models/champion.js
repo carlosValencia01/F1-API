@@ -9,6 +9,10 @@ const ChampionSchema = Schema({
     type: String,
     required: true,
   },
+  nationality: {
+    type: String,
+    required: true,
+  },
   team: {
     type: String,
     required: true,

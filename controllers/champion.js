@@ -11,8 +11,8 @@ const getChampionByYear = async (req, res = response) => {
 };
 
 const postChampion = async (req, res) => {
-  const { name, lastname, team, year } = req.body;
-  const champion = new Champion({ name, lastname, team, year });
+  const { name, lastname, nationality, team, year } = req.body;
+  const champion = new Champion({ name, lastname, nationality, team, year });
   await champion.save();
   res.json({
     msg: "post",
